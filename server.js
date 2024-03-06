@@ -15,7 +15,6 @@ export async function server () {
     function killServer () {
       // negative pid kills whole process group
       process.kill(-server.pid, 'SIGKILL')
-
     }
 
     // stop server on ctrl+c
