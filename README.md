@@ -52,7 +52,7 @@ The initial handshake never completes. If it did you would expect to see:
 ```console
 % npm start
 
-> webtransport-readable-never-ends@1.0.0 start
+> webtransport-go-server@1.0.0 start
 > node index.js
 
 SERVER start
@@ -75,9 +75,11 @@ To see the code running successfully in a browser run `npm run browser`:
 ```console
 % npm run browser
 
-> webtransport-readable-never-ends@1.0.0 browser
+> webtransport-go-server@1.0.0 browser
 > node browser.js
 
+SERVER start
+SERVER ready
 
 Paste the following code into https://codepen.io or simmilar:
 
