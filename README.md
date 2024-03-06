@@ -26,7 +26,7 @@ Clone this repo then:
 ```console
 % npm start
 
-> webtransport-go-server@1.0.0 start
+> webtransport-dial-go-server@1.0.0 start
 > node index.js
 
 SERVER start
@@ -75,7 +75,7 @@ To see the code running successfully in a browser run `npm run browser`:
 ```console
 % npm run browser
 
-> webtransport-go-server@1.0.0 browser
+> webtransport-dial-go-server@1.0.0 browser
 > node browser.js
 
 SERVER start
