@@ -17,6 +17,9 @@ Clone this repo then:
 * Install `go1.20` or later
 * Install go deps with `go get`
 * Install node deps with `npm i`
+
+## Node.js
+
 * Run `npm start`
 * Let the example run, you should see something like:
 
@@ -64,6 +67,8 @@ CLIENT read from stream
 CLIENT got from stream { done: true }
 CLIENT read stream finished
 ```
+
+## Browsers
 
 To see the code running successfully in a browser run `npm run browser`:
 
