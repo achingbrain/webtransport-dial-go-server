@@ -5,7 +5,7 @@ export async function server () {
 
   return new Promise((resolve, reject) => {
     console.info('SERVER start')
-    // server will continue to run until process exit
+
     const server = spawn('go', ['run', 'server.go'], {
       // detached runs in separate process group
       detached: true
@@ -25,9 +25,9 @@ export async function server () {
 
     // stop server on error
     process.on('uncaughtException', (err) => {
-      killServer()
-
       console.error(err)
+
+      killServer()
       process.exit(1)
     })
 
@@ -39,7 +39,11 @@ export async function server () {
       console.info('server exited with code', code)
     })
     server.stderr.addListener('data', buf => {
-      reject(new Error(buf.toString()))
+      if (!resolved) {
+        reject(new Error(buf.toString()))
+      } else {
+        console.error(buf.toString())
+      }
     })
 
     server.stdout.addListener('data', buf => {

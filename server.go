@@ -69,6 +69,11 @@ func main() {
 		if _, err := io.Copy(stream, stream); err != nil {
 			fmt.Println("server write err:", err)
 		}
+
+		log.Printf("SERVER stream finished")
+		defer stream.Close()
+
+		log.Printf("SERVER stream closed")
 	})
 
 	if err := s.ListenAndServe(); err != nil {

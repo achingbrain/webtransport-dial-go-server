@@ -9,7 +9,7 @@
     "browser": "node browser.js"
   },
   "dependencies": {
-    "@fails-components/webtransport": "^1.0.10",
-    "@fails-components/webtransport-transport-http3-quiche": "^1.0.10"
+    "@fails-components/webtransport": "^1.0.11",
+    "@fails-components/webtransport-transport-http3-quiche": "^1.0.11"
   }
 }
